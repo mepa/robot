@@ -9,7 +9,8 @@
   #if defined(__AVR__)
     #include <avr/io.h>
   #endif
-  #include "WProgram.h"
+//#include "WProgram.h" // DEPRECATED
+  #include "Arduino.h"
 #endif
 
 #include "AFMotor.h"
