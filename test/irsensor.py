@@ -12,3 +12,5 @@ while True:
                time.sleep(0.1)
           elif j==0:                              #Left IR sensor detects an object
                print "Obstacle detected on Right",j
+               time.sleep(0.1)
+               
