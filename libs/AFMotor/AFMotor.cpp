@@ -2,7 +2,7 @@
 // copyright Adafruit Industries LLC, 2009
 // this code is public domain, enjoy!
 
-
+/*
 #if (ARDUINO >= 100)
   #include "Arduino.h"
 #else
@@ -12,10 +12,10 @@
 //#include "WProgram.h" // DEPRECATED
   #include "Arduino.h"
 #endif
-
+*/
 #include "AFMotor.h"
+#include "wiringPi.h"
 
-motor-748676
 
 static uint8_t latch_state;
 
