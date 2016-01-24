@@ -6,7 +6,8 @@
 #include <algorithm>
 #include <cstdlib>
 
-#include "../AFMotor/AFMotor.h"
+#include "../libs/AFMotor/AFMotor.h"
+#include <wiringPi.h>
 
 using namespace std;
      
@@ -24,16 +25,16 @@ AF_DCMotor left_motor(1); // create motor #1
 int main() {
   cout << "tick" << endl;
   
-  //right_motor.run(FORWARD);      // turn it on going forward
-  //delay(1000);
+  right_motor.run(FORWARD);      // turn it on going forward
+  delay(1000);
   
   cout << "tock" << endl;
-  //right_motor.run(BACKWARD);     // the other way
-  //delay(1000);
+  right_motor.run(BACKWARD);     // the other way
+  delay(1000);
   
   cout << "tack" << endl;
-  //right_motor.run(RELEASE);      // stopped
-  //delay(1000);
+  right_motor.run(RELEASE);      // stopped
+  delay(1000);
 
   return 0;
 }
